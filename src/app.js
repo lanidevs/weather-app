@@ -37,8 +37,22 @@ function displayTemperature(response) {
 
 }
 
-let apiKey ="ca4ff62b82ce5d50cb085203c2cfa005";
-let city= "Houston";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-axios.get(apiUrl).then(displayTemperature);
+function search(city){
+    let apiKey ="ca4ff62b82ce5d50cb085203c2cfa005";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayTemperature);
+}
+function handleSubmit(event){
+ event.preventDefault();
+ let cityInputElement= document.querySelector("#city-input");
+ search(cityInputElement.value);
+ 
+}
+
+
+search("New York");
+
+
+let form= document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
