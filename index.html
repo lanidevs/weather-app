@@ -13,36 +13,15 @@
     <div class="container">
      <div class="weather-app-wrapper">
          <div class="weather-app">
-             <form id="search-form" class="mb-3">
-                 <div class="row">
-                    <div class="col-9">
-                     <input 
-                     type="search" 
-                     placeholder="Type a City"
-                     class="form-control"
-                     id="city-input"
-                     autocomplete="off"
-                     />
-                    </div>
-                    <div class="col-3">
-                     <input 
-                     type="submit"
-                     value="search"
-                     class="btn btn-primary w-100"/> 
-                    </div>
-                </div>
-             </form>
-             <div class="overview">
-    <h1 id="city">
-        
-    </h1>
-    <ul>
-        <li>Last updated at <span id="date"></span></li>
-        <li id="description"></li>
-    </ul>
-                </div>
+         <div class="overview">
+    <h1 id="city"> </h1>
+        <ul>
+         <li>Last updated at <span id="date"></span></li>
+         <li id="description"></li>
+        </ul>
+         </div>
       <div class="row"> 
-        <div class="col-6">
+        <div class="col-8">
             <div class="clearfix weather-temperature">
               <img
                src=""
@@ -55,7 +34,7 @@
               </div> 
             </div>
         </div>
-        <div class="col-6">
+        <div class="col-4">
             <ul>
                 <li>
                     Humidity: <span id="humidity"></span>% </li>
@@ -66,61 +45,27 @@
         </div>
       </div>
       <div class="row weather-forecast" id="forecast">
-          <div class="col-2">
-              <h3>
-                  Sun
-              </h3>
-              <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt=""/>
-              <div class="wether-forecast-temperature">
-                  <strong>22°</strong> 17°
-              </div>
-          </div>
-          <div class="col-2">
-            <h3>
-                Mon
-            </h3>
-            <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt=""/>
-            <div class="wether-forecast-temperature">
-                <strong>24°</strong> 18°
-            </div>
-        </div>
-        <div class="col-2">
-            <h3>
-                Tues
-            </h3>
-            <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt=""/>
-            <div class="wether-forecast-temperature">
-                <strong>20°</strong> 15°
-            </div>
-        </div>
-        <div class="col-2">
-            <h3>
-                Weds
-            </h3>
-            <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt=""/>
-            <div class="wether-forecast-temperature">
-                <strong>22°</strong> 17°
-            </div>
-        </div>
-        <div class="col-2">
-            <h3>
-                Thurs
-            </h3>
-            <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt=""/>
-            <div class="wether-forecast-temperature">
-                <strong>28°</strong> 20°
-            </div>
-        </div>
-        <div class="col-2">
-            <h3>
-                Fri
-            </h3>
-            <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt=""/>
-            <div class="wether-forecast-temperature">
-                <strong>21°</strong> 16°
-            </div>
-        </div>
       </div>
+      <form id="search-form" class="mb-3">
+        <div class="row">
+            <div class="col-9">
+             <input 
+             type="search" 
+             placeholder="Type a City"
+             class="form-control"
+             id="city-input"
+             autocomplete="off"
+             />
+            </div>
+            <div class="col-3">
+             <input 
+             type="submit"
+             value="search"
+             class="btn btn-primary w-100"/> 
+            </div>
+        </div>
+     </form>
+     <h4>*forecast temperatures displayed in <strong>Celsius</strong> and hours in <strong>military</strong> time</h4>
     </div>
     <small>
           <a href="https://github.com/lanidevs/weather-app" target="_blank">Open-source code</a> by Leilani Speer
